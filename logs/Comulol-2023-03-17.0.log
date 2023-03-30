@@ -1,0 +1,9 @@
+2023-03-17 00:02:52,393 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(291)-127.0.0.1] Application shutdown requested.
+2023-03-17 00:02:52,515 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(291)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-17 00:02:52,516 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(291)-127.0.0.1] Stopping service [Tomcat]
+2023-03-17 00:02:52,518 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(291)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-17 00:02:52,523 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(291)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-17 00:02:52,526 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(291)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-17 00:02:52,533 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(291)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-17 00:02:52,539 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(291)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-03-17 00:02:52,543 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(291)-127.0.0.1] HikariPool-1 - Shutdown completed.
