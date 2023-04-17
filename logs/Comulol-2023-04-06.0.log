@@ -1,0 +1,21 @@
+2023-04-06 02:08:56,491 ERROR com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-2] El token ha expirado
+2023-04-06 02:08:56,558 ERROR com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-6] El token ha expirado
+2023-04-06 02:09:15,535 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(793)-127.0.0.1] Application shutdown requested.
+2023-04-06 02:09:15,648 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-06 02:09:15,649 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] Stopping service [Tomcat]
+2023-04-06 02:09:15,650 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-06 02:09:15,656 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2023-04-06 02:09:15,657 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-06 02:09:15,660 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(793)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-06 02:09:15,666 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(793)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-06 02:09:15,668 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(793)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2023-04-06 02:09:15,676 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(793)-127.0.0.1] HikariPool-2 - Shutdown completed.

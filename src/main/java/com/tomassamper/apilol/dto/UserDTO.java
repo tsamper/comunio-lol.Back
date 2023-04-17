@@ -1,5 +1,8 @@
 package com.tomassamper.apilol.dto;
 
+import java.util.List;
+import java.util.Set;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,9 +15,11 @@ import lombok.NoArgsConstructor;
 public class UserDTO {
 	
 	private String name;
-	private String surname;
+	private String firstSurname;
+	private String secondSurname;
 	private String username;
-	private String password;
 	private String email;
 	private int money;
+	private List<LeagueWithoutUsersDTO> leagues;
+	private List<PlayerDTO> players;
 }

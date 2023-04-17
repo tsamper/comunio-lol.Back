@@ -1,0 +1,95 @@
+2023-03-31 11:14:59,436 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ChampLolApi21Application using Java 11.0.10 on TrasWan with PID 63372 (C:\Users\PcCom1\eclipse-workspace\champLolAPI2-1\target\classes started by TrasWan in C:\Users\PcCom1\eclipse-workspace\champLolAPI2-1)
+2023-03-31 11:14:59,442 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-31 11:14:59,496 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-31 11:14:59,496 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-31 11:15:00,970 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-31 11:15:00,972 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-03-31 11:15:01,034 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.ChampionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,037 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.CountryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,040 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.PlayerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,042 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,044 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.TeamRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,047 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tomassamper.apilol.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-31 11:15:01,047 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 69 ms. Found 0 JDBC repository interfaces.
+2023-03-31 11:15:01,059 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-31 11:15:01,060 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-31 11:15:01,158 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 91 ms. Found 6 JPA repository interfaces.
+2023-03-31 11:15:01,997 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-03-31 11:15:02,013 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-31 11:15:02,014 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-03-31 11:15:02,014 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-31 11:15:02,229 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-31 11:15:02,230 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2733 ms
+2023-03-31 11:15:02,655 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-31 11:15:02,749 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-31 11:15:03,001 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-31 11:15:03,152 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-31 11:15:03,458 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-31 11:15:03,483 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-31 11:15:04,542 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-31 11:15:04,554 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-31 11:15:05,118 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-31 11:15:06,137 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-31 11:15:06,147 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7df3b100, org.springframework.security.web.context.SecurityContextPersistenceFilter@838889a, org.springframework.security.web.header.HeaderWriterFilter@2e1f4502, org.springframework.web.filter.CorsFilter@1a909ecc, org.springframework.security.web.authentication.logout.LogoutFilter@633fe3a5, com.tomassamper.apilol.security.JwtRequestFilter@47508495, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@253f28f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f617de0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74b95663, org.springframework.security.web.session.SessionManagementFilter@40aeccdb, org.springframework.security.web.access.ExceptionTranslationFilter@18b72d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55553df2]
+2023-03-31 11:15:06,618 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-31 11:15:06,647 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-03-31 11:15:06,677 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31 11:15:06,693 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ChampLolApi21Application in 7.782 seconds (JVM running for 9.119)
+2023-03-31 11:30:01,801 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31 11:30:01,802 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-31 11:30:01,804 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-03-31 11:30:01,853 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-2] El token no viene con Bearer delante
+2023-03-31 11:30:01,951 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-2] Inicio sesion
+2023-03-31 11:30:02,186 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-3] El token no viene con Bearer delante
+2023-03-31 11:30:02,188 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-3] Inicio sesion
+2023-03-31 11:30:09,236 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-4] El token no viene con Bearer delante
+2023-03-31 11:30:09,238 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-4] Inicio sesion
+2023-03-31 11:31:22,605 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-7] El token no viene con Bearer delante
+2023-03-31 11:31:22,617 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-7] Inicio sesion
+2023-03-31 11:31:37,073 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-8] El token no viene con Bearer delante
+2023-03-31 11:31:37,075 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-8] Inicio sesion
+2023-03-31 11:31:40,238 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-9] El token no viene con Bearer delante
+2023-03-31 11:31:40,240 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-9] Inicio sesion
+2023-03-31 13:41:08,032 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-4] El token no viene con Bearer delante
+2023-03-31 13:41:08,088 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-5] El token no viene con Bearer delante
+2023-03-31 13:41:15,561 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-6] El token no viene con Bearer delante
+2023-03-31 13:41:15,570 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-7] El token no viene con Bearer delante
+2023-03-31 14:05:39,615 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-1] El token no viene con Bearer delante
+2023-03-31 14:05:39,617 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-1] Inicio sesion
+2023-03-31 14:05:57,629 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-3] El token no viene con Bearer delante
+2023-03-31 14:05:57,631 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-3] Inicio sesion
+2023-03-31 14:06:00,923 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-2] El token no viene con Bearer delante
+2023-03-31 14:06:00,925 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-2] Inicio sesion
+2023-03-31 18:19:51,646 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-8] El token no viene con Bearer delante
+2023-03-31 18:19:51,658 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-9] El token no viene con Bearer delante
+2023-03-31 18:25:08,833 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-3] El token no viene con Bearer delante
+2023-03-31 18:25:08,841 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-2] El token no viene con Bearer delante
+2023-03-31 18:29:06,125 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-5] El token no viene con Bearer delante
+2023-03-31 18:29:06,136 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-6] El token no viene con Bearer delante
+2023-03-31 18:29:08,601 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-7] El token no viene con Bearer delante
+2023-03-31 18:29:08,612 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-8] El token no viene con Bearer delante
+2023-03-31 18:33:05,380 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-3] El token no viene con Bearer delante
+2023-03-31 18:33:05,382 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-3] Inicio sesion
+2023-03-31 18:34:15,471 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-5] El token no viene con Bearer delante
+2023-03-31 18:34:15,472 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-5] Inicio sesion
+2023-03-31 18:45:33,181 WARN com.tomassamper.apilol.security.JwtRequestFilter [http-nio-8080-exec-8] El token no viene con Bearer delante
+2023-03-31 18:45:33,183 INFO com.tomassamper.apilol.controller.UserController [http-nio-8080-exec-8] Inicio sesion
+2023-03-31 19:41:39,798 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(511)-127.0.0.1] Application shutdown requested.
+2023-03-31 19:41:39,891 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-31 19:41:39,892 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] Stopping service [Tomcat]
+2023-03-31 19:41:39,894 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-31 19:41:39,899 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2023-03-31 19:41:39,900 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-31 19:41:39,903 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(511)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-31 19:41:39,910 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(511)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-31 19:41:39,915 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(511)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-03-31 19:41:39,926 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(511)-127.0.0.1] HikariPool-1 - Shutdown completed.

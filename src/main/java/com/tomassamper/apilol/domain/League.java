@@ -1,7 +1,6 @@
 package com.tomassamper.apilol.domain;
 
-import java.util.Set;
-
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,11 +28,14 @@ public class League {
 	@Column
 	private String name;
 	
+	@Column 
+	private String code;
+	
 	@Column
-	private LeagueEnum type;
+	private String leagueType;
 	
 	@ManyToMany
 	@JoinTable(name="user_league", joinColumns = @JoinColumn(name="league_id"), inverseJoinColumns = @JoinColumn(name="user_id"))
-	private Set<User> users;
+	private List<User> users;
 	
 }

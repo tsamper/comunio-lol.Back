@@ -10,4 +10,5 @@ public interface UserService {
 	public User findByUsername(String username);
 	public User findByActive(boolean state);
 	public boolean modifyActive(long id, boolean state);
+	public boolean modifyLastLogin(long id);
 }

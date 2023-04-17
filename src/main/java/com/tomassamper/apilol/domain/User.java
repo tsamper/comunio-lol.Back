@@ -63,12 +63,20 @@ public class User {
 	@Column 
 	private boolean active;
 
-	
 	@ManyToMany
 	@JoinTable(name="user_role", joinColumns = @JoinColumn(name="user_id"), inverseJoinColumns = @JoinColumn(name="role_id"))
 	private Set<Role> roles;
 	
 	@ManyToMany
 	@JoinTable(name="user_league", joinColumns = @JoinColumn(name="user_id"), inverseJoinColumns = @JoinColumn(name="league_id"))
-	private Set<League> leagues;
+	private List<League> leagues;
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", firstSurname=" + firstSurname + ", secondSurname="
+				+ secondSurname + ", username=" + username + ", password=" + password + ", email=" + email + ", money="
+				+ money + ", creationDate=" + creationDate + ", lastLogin=" + lastLogin + ", active=" + active + "]";
+	}
+	
+	
 }

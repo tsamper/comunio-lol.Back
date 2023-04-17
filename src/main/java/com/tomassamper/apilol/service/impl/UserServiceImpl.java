@@ -1,6 +1,7 @@
 package com.tomassamper.apilol.service.impl;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -55,6 +56,14 @@ public class UserServiceImpl implements UserService {
 	public boolean modifyActive(long id, boolean state) {
 		User user = userRepository.findById(id);
 		user.setActive(state);
+		userRepository.save(user);
+		return true;
+	}
+
+	@Override
+	public boolean modifyLastLogin(long id) {
+		User user = userRepository.findById(id);
+		user.setLastLogin(LocalDateTime.now());
 		userRepository.save(user);
 		return true;
 	}

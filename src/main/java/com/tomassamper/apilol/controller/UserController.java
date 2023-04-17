@@ -59,9 +59,14 @@ public class UserController {
 		ArrayList<UserNameAndEmailDTO> usersDTO = new ArrayList<>();
 		users.stream().forEach(u -> usersDTO.add(convertNameAndEmailToDTO(u)));
 		return new ResponseEntity<ArrayList<UserNameAndEmailDTO>>(usersDTO, HttpStatus.OK);
-		
 	}
 
+	@GetMapping("/getActiveUser")
+	public ResponseEntity<UserDTO> getActiveUserDTO(){
+		User user = userService.findByActive(true);
+		UserDTO userDTO = convertToDTO(user);
+		return new ResponseEntity<UserDTO>(userDTO, HttpStatus.OK);
+	}
 	
 	@PostMapping("/register")
 	public void addUser(@RequestBody UserDTO userDTO, BindingResult bResult) {
@@ -72,6 +77,10 @@ public class UserController {
 	@PostMapping(value = "/login", consumes = "application/json", produces="application/json")
 	public ResponseEntity<?> login(@RequestBody JwtRequest authRequest) throws Exception{
 		logger.info("Inicio sesion");
+		ArrayList<User> users = userService.findAll();
+		for (User user : users) {
+			userService.modifyActive(user.getId(), false);
+		}
 		authenticate(authRequest.getUsername(), authRequest.getPassword());
 		User user = userService.findByUsername(authRequest.getUsername());
 		userService.modifyActive(user.getId(), true);
@@ -83,6 +92,7 @@ public class UserController {
 	@GetMapping("/logoout")
 	public  ResponseEntity<String> logoout(){
 		User user = userService.findByActive(true);
+		userService.modifyLastLogin(user.getId());
 		userService.modifyActive(user.getId(), false);
 		return new ResponseEntity<String>("Logout exitoso", HttpStatus.OK);
 	}
