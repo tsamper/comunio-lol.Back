@@ -2,7 +2,6 @@ package com.tomassamper.apilol.domain;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import org.springframework.format.annotation.DateTimeFormat;
 import lombok.AllArgsConstructor;
@@ -47,9 +45,6 @@ public class User {
 	@Column
 	private String email;
 	
-	@OneToMany(mappedBy = "user")
-	private List<Player> players;
-	
 	@Column
 	private int money;
 	
@@ -66,10 +61,6 @@ public class User {
 	@ManyToMany
 	@JoinTable(name="user_role", joinColumns = @JoinColumn(name="user_id"), inverseJoinColumns = @JoinColumn(name="role_id"))
 	private Set<Role> roles;
-	
-	@ManyToMany
-	@JoinTable(name="user_league", joinColumns = @JoinColumn(name="user_id"), inverseJoinColumns = @JoinColumn(name="league_id"))
-	private List<League> leagues;
 
 	@Override
 	public String toString() {

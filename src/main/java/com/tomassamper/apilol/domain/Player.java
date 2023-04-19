@@ -46,10 +46,6 @@ public class Player {
 	@Column 
 	private String role;
 	
-	@ManyToOne
-	@JoinColumn(name = "user_id")
-	private User user;
-	
 	@Column 
 	private int price;
 	

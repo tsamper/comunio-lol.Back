@@ -19,9 +19,7 @@ public class PlayerDTO {
 	private String username;
 	private TeamDTO team;
 	private int age;
-	private CountryDTO nacionality;
 	private String role;
-	private UserDTO user;
 	private int price;
 	private LeagueEnum league;
 	
