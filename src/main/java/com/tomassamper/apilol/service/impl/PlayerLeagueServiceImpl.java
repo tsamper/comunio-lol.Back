@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tomassamper.apilol.domain.League;
+import com.tomassamper.apilol.domain.Player;
 import com.tomassamper.apilol.domain.PlayerLeague;
 import com.tomassamper.apilol.domain.User;
 import com.tomassamper.apilol.repository.PlayerLeagueRepository;
@@ -30,6 +31,16 @@ public class PlayerLeagueServiceImpl implements PlayerLeagueService {
 	@Override
 	public ArrayList<PlayerLeague> findByLeague(League league) {
 		return playerLeagueRepository.findByLeague(league);
+	}
+
+	@Override
+	public PlayerLeague findByLeagueAndPlayer(League league, Player player) {
+		return playerLeagueRepository.findByLeagueAndPlayer(league, player);
+	}
+
+	@Override
+	public ArrayList<PlayerLeague> findByLeagueAndOwner(League league, User user) {
+		return playerLeagueRepository.findByLeagueAndOwner(league, user);
 	}
 
 }

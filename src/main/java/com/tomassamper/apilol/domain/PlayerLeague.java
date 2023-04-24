@@ -1,5 +1,6 @@
 package com.tomassamper.apilol.domain;
 
+import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -31,5 +32,8 @@ public class PlayerLeague {
 	
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User owner; 
+	private User owner;
+	
+	@Column
+	private boolean active;
 }

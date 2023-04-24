@@ -69,7 +69,7 @@ public class LeagueController {
 		leagueUserService.add(leagueUser);
 		for (Player player : players) {
 			PlayerLeagueId id = new PlayerLeagueId(player.getId(), league.getId());
-			PlayerLeague playerLeague = new PlayerLeague(id, player, league, null);
+			PlayerLeague playerLeague = new PlayerLeague(id, player, league, null, false);
 			playerLeagueService.add(playerLeague);
 		}
 	}

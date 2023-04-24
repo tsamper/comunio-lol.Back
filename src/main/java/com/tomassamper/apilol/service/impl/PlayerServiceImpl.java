@@ -26,4 +26,10 @@ public class PlayerServiceImpl implements PlayerService {
 		return playerRepository.findByLeague(legaue);
 	}
 
+	@Override
+	public Player findByUsername(String username) {
+		return playerRepository.findByUsername(username);
+
+	}
+
 }

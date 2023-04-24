@@ -8,4 +8,5 @@ import com.tomassamper.apilol.domain.Player;
 public interface PlayerService {
 	public ArrayList<Player> findByRole(String role);
 	public ArrayList<Player> findByLeagueType(LeagueEnum legaue);
+	public Player findByUsername(String username);
 }

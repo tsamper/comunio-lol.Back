@@ -12,4 +12,5 @@ import com.tomassamper.apilol.domain.Player;
 public interface PlayerRepository extends CrudRepository<Player, Long> {
 	ArrayList<Player> findByRole(String role);
 	ArrayList<Player> findByLeague(LeagueEnum league);
+	Player findByUsername(String username);
 }

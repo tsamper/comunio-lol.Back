@@ -51,5 +51,11 @@ public class Player {
 	
 	@Column
 	private LeagueEnum league;
+
+	@Override
+	public String toString() {
+		return "Player [id=" + id + ", name=" + name + ", surname=" + surname + ", username=" + username + ", age="
+				+ age + ", role=" + role + ", price=" + price + ", league=" + league + "]";
+	}
 	
 }
